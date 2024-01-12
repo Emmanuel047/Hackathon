@@ -1,0 +1,9 @@
+body {
+    background: url(pexels-pixabay-355853.jpg);
+    background-size: cover;
+}
+
+head {
+    background-color: red;
+    color: red;
+}
