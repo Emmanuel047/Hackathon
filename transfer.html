@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Transfer Land Ownership</title>
+        <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+    }
+    form {
+      max-width: 400px;
+      margin: 20px auto;
+      background: #fff;
+      padding: 20px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    input[type="text"],
+    input[type="number"],
+    input[type="email"] {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      box-sizing: border-box;
+    }
+    button {
+      display: block;
+      width: 100%;
+      padding: 10px;
+      background: #4caf50;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #45a049;
+    }
+  </style>
+    </head>
+    <body>
+        <form action="land_transfer.php" method="post">
+            <h2>Transfer Land Ownership</h2>
+            <input type="text" name="currentOwnerName"
+                placeholder="Current Owner's Name" required>
+            <input type="text" name="currentOwner ID number"
+                placeholder="Current Owner's ID number" required>
+            <input type="text" name="landAddress" placeholder="Land Address"
+                required>
+            <input type="number" name="landSize"
+                placeholder="Land Size (in square meters)" required>
+            <input type="email" name="newOwnerEmail"
+                placeholder="New Owner's Email" required>
+            <button type="submit">Transfer Land Ownership</button>
+        </form>
+    </body>
+</html>
